@@ -1,0 +1,87 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.25807.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Engine", "Engine", "{A5C1C95C-88FD-4F4B-A172-E5CD23C362E7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Games", "Games", "{ADB6B77E-02CC-4D57-8AE6-E4C42D510757}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BattleTank", "Intermediate\ProjectFiles\BattleTank.vcxproj", "{E3BAAB27-F543-4321-8B9A-34E1CE6AA387}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UE4", "Intermediate\ProjectFiles\UE4.vcxproj", "{FC7A221F-C2A4-4636-BC6D-4D1C848C7A01}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Visualizers", "Visualizers", "{014CA46B-7039-4404-B58C-9AB312834A84}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\UE_4.21\Engine\Extras\VisualStudioDebugging\UE4.natvis = ..\..\..\UE_4.21\Engine\Extras\VisualStudioDebugging\UE4.natvis
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		DebugGame Editor|HTML5 = DebugGame Editor|HTML5
+		DebugGame Editor|Win32 = DebugGame Editor|Win32
+		DebugGame Editor|Win64 = DebugGame Editor|Win64
+		DebugGame|HTML5 = DebugGame|HTML5
+		DebugGame|Win32 = DebugGame|Win32
+		DebugGame|Win64 = DebugGame|Win64
+		Development Editor|HTML5 = Development Editor|HTML5
+		Development Editor|Win32 = Development Editor|Win32
+		Development Editor|Win64 = Development Editor|Win64
+		Development|HTML5 = Development|HTML5
+		Development|Win32 = Development|Win32
+		Development|Win64 = Development|Win64
+		Shipping|HTML5 = Shipping|HTML5
+		Shipping|Win32 = Shipping|Win32
+		Shipping|Win64 = Shipping|Win64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E3BAAB27-F543-4321-8B9A-34E1CE6AA387}.DebugGame Editor|HTML5.ActiveCfg = Invalid|Win32
+		{E3BAAB27-F543-4321-8B9A-34E1CE6AA387}.DebugGame Editor|Win32.ActiveCfg = Invalid|Win32
+		{E3BAAB27-F543-4321-8B9A-34E1CE6AA387}.DebugGame Editor|Win64.ActiveCfg = DebugGame_Editor|x64
+		{E3BAAB27-F543-4321-8B9A-34E1CE6AA387}.DebugGame Editor|Win64.Build.0 = DebugGame_Editor|x64
+		{E3BAAB27-F543-4321-8B9A-34E1CE6AA387}.DebugGame|HTML5.ActiveCfg = HTML5_DebugGame|Win32
+		{E3BAAB27-F543-4321-8B9A-34E1CE6AA387}.DebugGame|HTML5.Build.0 = HTML5_DebugGame|Win32
+		{E3BAAB27-F543-4321-8B9A-34E1CE6AA387}.DebugGame|Win32.ActiveCfg = DebugGame|Win32
+		{E3BAAB27-F543-4321-8B9A-34E1CE6AA387}.DebugGame|Win32.Build.0 = DebugGame|Win32
+		{E3BAAB27-F543-4321-8B9A-34E1CE6AA387}.DebugGame|Win64.ActiveCfg = DebugGame|x64
+		{E3BAAB27-F543-4321-8B9A-34E1CE6AA387}.DebugGame|Win64.Build.0 = DebugGame|x64
+		{E3BAAB27-F543-4321-8B9A-34E1CE6AA387}.Development Editor|HTML5.ActiveCfg = Invalid|Win32
+		{E3BAAB27-F543-4321-8B9A-34E1CE6AA387}.Development Editor|Win32.ActiveCfg = Invalid|Win32
+		{E3BAAB27-F543-4321-8B9A-34E1CE6AA387}.Development Editor|Win64.ActiveCfg = Development_Editor|x64
+		{E3BAAB27-F543-4321-8B9A-34E1CE6AA387}.Development Editor|Win64.Build.0 = Development_Editor|x64
+		{E3BAAB27-F543-4321-8B9A-34E1CE6AA387}.Development|HTML5.ActiveCfg = HTML5_Development|Win32
+		{E3BAAB27-F543-4321-8B9A-34E1CE6AA387}.Development|HTML5.Build.0 = HTML5_Development|Win32
+		{E3BAAB27-F543-4321-8B9A-34E1CE6AA387}.Development|Win32.ActiveCfg = Development|Win32
+		{E3BAAB27-F543-4321-8B9A-34E1CE6AA387}.Development|Win32.Build.0 = Development|Win32
+		{E3BAAB27-F543-4321-8B9A-34E1CE6AA387}.Development|Win64.ActiveCfg = Development|x64
+		{E3BAAB27-F543-4321-8B9A-34E1CE6AA387}.Development|Win64.Build.0 = Development|x64
+		{E3BAAB27-F543-4321-8B9A-34E1CE6AA387}.Shipping|HTML5.ActiveCfg = HTML5_Shipping|Win32
+		{E3BAAB27-F543-4321-8B9A-34E1CE6AA387}.Shipping|HTML5.Build.0 = HTML5_Shipping|Win32
+		{E3BAAB27-F543-4321-8B9A-34E1CE6AA387}.Shipping|Win32.ActiveCfg = Shipping|Win32
+		{E3BAAB27-F543-4321-8B9A-34E1CE6AA387}.Shipping|Win32.Build.0 = Shipping|Win32
+		{E3BAAB27-F543-4321-8B9A-34E1CE6AA387}.Shipping|Win64.ActiveCfg = Shipping|x64
+		{E3BAAB27-F543-4321-8B9A-34E1CE6AA387}.Shipping|Win64.Build.0 = Shipping|x64
+		{FC7A221F-C2A4-4636-BC6D-4D1C848C7A01}.DebugGame Editor|HTML5.ActiveCfg = BuiltWithUnrealBuildTool|Win32
+		{FC7A221F-C2A4-4636-BC6D-4D1C848C7A01}.DebugGame Editor|Win32.ActiveCfg = BuiltWithUnrealBuildTool|Win32
+		{FC7A221F-C2A4-4636-BC6D-4D1C848C7A01}.DebugGame Editor|Win64.ActiveCfg = BuiltWithUnrealBuildTool|Win32
+		{FC7A221F-C2A4-4636-BC6D-4D1C848C7A01}.DebugGame|HTML5.ActiveCfg = BuiltWithUnrealBuildTool|Win32
+		{FC7A221F-C2A4-4636-BC6D-4D1C848C7A01}.DebugGame|Win32.ActiveCfg = BuiltWithUnrealBuildTool|Win32
+		{FC7A221F-C2A4-4636-BC6D-4D1C848C7A01}.DebugGame|Win64.ActiveCfg = BuiltWithUnrealBuildTool|Win32
+		{FC7A221F-C2A4-4636-BC6D-4D1C848C7A01}.Development Editor|HTML5.ActiveCfg = BuiltWithUnrealBuildTool|Win32
+		{FC7A221F-C2A4-4636-BC6D-4D1C848C7A01}.Development Editor|Win32.ActiveCfg = BuiltWithUnrealBuildTool|Win32
+		{FC7A221F-C2A4-4636-BC6D-4D1C848C7A01}.Development Editor|Win64.ActiveCfg = BuiltWithUnrealBuildTool|Win32
+		{FC7A221F-C2A4-4636-BC6D-4D1C848C7A01}.Development|HTML5.ActiveCfg = BuiltWithUnrealBuildTool|Win32
+		{FC7A221F-C2A4-4636-BC6D-4D1C848C7A01}.Development|Win32.ActiveCfg = BuiltWithUnrealBuildTool|Win32
+		{FC7A221F-C2A4-4636-BC6D-4D1C848C7A01}.Development|Win64.ActiveCfg = BuiltWithUnrealBuildTool|Win32
+		{FC7A221F-C2A4-4636-BC6D-4D1C848C7A01}.Shipping|HTML5.ActiveCfg = BuiltWithUnrealBuildTool|Win32
+		{FC7A221F-C2A4-4636-BC6D-4D1C848C7A01}.Shipping|Win32.ActiveCfg = BuiltWithUnrealBuildTool|Win32
+		{FC7A221F-C2A4-4636-BC6D-4D1C848C7A01}.Shipping|Win64.ActiveCfg = BuiltWithUnrealBuildTool|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FC7A221F-C2A4-4636-BC6D-4D1C848C7A01} = {A5C1C95C-88FD-4F4B-A172-E5CD23C362E7}
+		{E3BAAB27-F543-4321-8B9A-34E1CE6AA387} = {ADB6B77E-02CC-4D57-8AE6-E4C42D510757}
+	EndGlobalSection
+EndGlobal
