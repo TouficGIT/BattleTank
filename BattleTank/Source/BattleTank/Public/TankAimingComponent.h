@@ -27,5 +27,5 @@ protected:
 
 private:	
 	UStaticMeshComponent* Barrel = nullptr;
-		
+	
 };
