@@ -5,6 +5,7 @@
 #include "Engine/World.h"
 #include "GameFramework/Actor.h"
 #include "BattleTank.h"
+#include "Tank.h"
 
 void ATankPlayerController::BeginPlay() 
 {
@@ -40,6 +41,10 @@ void ATankPlayerController::AimTowardsCrosshair()
 	if (!GetControlledTank()) { return; }
 	
 	FVector HitLocation; //OutParameter
+
+	auto Time = GetWorld()->GetTimeSeconds();
+	UE_LOG(LogTemp, Warning, TEXT("%f : AimTowardCrossHair called"), Time);
+
 	if (GetSightRayHitLocation(HitLocation))
 	{
 		GetControlledTank()->AimAt(HitLocation);
