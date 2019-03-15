@@ -18,4 +18,8 @@ public:
 	UFUNCTION(BlueprintCallable, Category = Move)
 	void SetThrottle(float Throttle);
 
+private:
+	UPROPERTY(EditDefaultsOnly, category = Moving)
+		float TankMaxDrivingForce = 40000000;
+
 };
