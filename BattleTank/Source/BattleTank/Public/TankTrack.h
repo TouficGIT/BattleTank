@@ -15,11 +15,11 @@ class BATTLETANK_API UTankTrack : public UStaticMeshComponent
 	GENERATED_BODY()
 
 public:
-	UFUNCTION(BlueprintCallable, Category = Move)
+	UFUNCTION(BlueprintCallable, Category = "Move")
 	void SetThrottle(float Throttle);
 
 private:
-	UPROPERTY(EditDefaultsOnly, category = Moving)
+	UPROPERTY(EditDefaultsOnly, category = "Moving")
 		float TankMaxDrivingForce = 40000000;
 
 };
