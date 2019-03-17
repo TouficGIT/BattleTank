@@ -27,8 +27,12 @@ void UTankMovementComponent::IntendTurnRight(float Throw)
 void UTankMovementComponent::RequestDirectMove(const FVector& MoveVelocity, bool bForceMaxSpeed)
 {
 	//auto Time = GetWorld()->GetTimeSeconds();;
-	auto Name = GetOwner()->GetName();
-	auto MoveVelocityString = MoveVelocity.ToString();
-	UE_LOG(LogTemp, Warning, TEXT("%s : Vectoring to %s"), *Name, *MoveVelocityString);
-	return;
+	//auto Name = GetOwner()->GetName();
+	//UE_LOG(LogTemp, Warning, TEXT("%s : Vectoring to %f"), *Name, *MoveVelocityString);
+
+	auto TankForward = GetOwner()->GetActorForwardVector().GetSafeNormal();
+	auto AIForwardIntention = MoveVelocity.GetSafeNormal();
+
+	auto ForwardThrow = FVector::DotProduct(TankForward, AIForwardIntention);
+	IntendMovementForward(ForwardThrow);
 }
