@@ -14,16 +14,21 @@ void UTankMovementComponent::Initialise(UTankTrack* LeftTrackToSet, UTankTrack* 
 
 void UTankMovementComponent::IntendMovementForward(float Throw)
 {
-	auto Time = GetWorld()->GetTimeSeconds();;
-	UE_LOG(LogTemp, Warning, TEXT("%f : Intend move forward throw %f"), Time, Throw);
-
 	LeftTrack->SetThrottle(Throw);
 	RightTrack->SetThrottle(Throw);
-
 }
 
 void UTankMovementComponent::IntendTurnRight(float Throw)
 {
 	LeftTrack->SetThrottle(Throw);
 	RightTrack->SetThrottle(-Throw);
+}
+
+void UTankMovementComponent::RequestDirectMove(const FVector& MoveVelocity, bool bForceMaxSpeed)
+{
+	//auto Time = GetWorld()->GetTimeSeconds();;
+	auto Name = GetOwner()->GetName();
+	auto MoveVelocityString = MoveVelocity.ToString();
+	UE_LOG(LogTemp, Warning, TEXT("%s : Vectoring to %s"), *Name, *MoveVelocityString);
+	return;
 }
