@@ -2,6 +2,7 @@
 
 
 #include "TankPlayerController.h"
+#include "TankAimingComponent.h"
 #include "Engine/World.h"
 #include "GameFramework/Actor.h"
 #include "BattleTank.h"
@@ -10,6 +11,16 @@
 void ATankPlayerController::BeginPlay() 
 {
 	Super::BeginPlay();
+	auto AimingComponent = GetControlledTank()->FindComponentByClass<UTankAimingComponent>();
+
+	if (AimingComponent)
+	{
+		FoundAimingComponent(AimingComponent);
+	}
+	else
+	{
+		UE_LOG(LogTemp, Warning, TEXT("PlayerController can't find aiming component at Begin Play"));
+	}
 
 	auto ControlledTank = GetControlledTank();
 	if (!ControlledTank)
