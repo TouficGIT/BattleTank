@@ -28,5 +28,5 @@ void ATankAIController::Tick(float DeltaTime)
 	MoveToActor(PlayerTank, AcceptanceRadius);
 
 	//TODO Fix firing
-	//ControlledTank->Fire(); // TODO Don't fire every frame
+	AimingComponent->Fire(); // TODO Don't fire every frame
 }
