@@ -18,8 +18,13 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Move")
 	void SetThrottle(float Throttle);
 
-private:
 	UPROPERTY(EditDefaultsOnly, category = "Moving")
 		float TankMaxDrivingForce = 40000000;
+
+
+private:
+
+	UTankTrack();
+	void TickComponent(float DeltaTime, enum ELevelTick TickType, FActorComponentTickFunction *ThisTickFunction) override;
 
 };
